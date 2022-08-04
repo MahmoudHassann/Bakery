@@ -1,0 +1,379 @@
+@import url(./font.css);
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya";
+}
+.main {
+  position: relative;
+  background-color: #ccc;
+  color: #ffffff;
+  background-image: url("../image/drew-coffman-1872.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 20px 0 60px;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.main > * {
+  position: relative;
+  z-index: 10;
+}
+.container {
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo {
+  display: inline-block;
+}
+.logo img {
+  height: 48px;
+}
+.nav-item {
+  float: right;
+}
+.nav-item nav ul {
+  text-align: center;
+}
+
+.nav-item nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  float: left;
+  height: 100%;
+}
+.nav-item nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.main-text {
+  margin-top: 250px;
+}
+.center {
+  text-align: center;
+  font-size: 76px;
+  margin-bottom: 18px;
+  line-height: 1.2em;
+}
+.para {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.button-group {
+  margin-top: 30px;
+}
+.btn {
+  padding: 15px 28px;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.btn-solid {
+  border: 2px solid transparent;
+  background-color: #8e7754;
+  color: #ffffff;
+}
+.btn-white {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.scroller {
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 32px;
+  height: 50px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: 10px;
+  top: 6px;
+}
+/* about-area */
+
+.about-area {
+  padding-top: 80px;
+}
+.about-area .col-left {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.about-area .col-right {
+  width: 50%;
+  float: right;
+  padding-top: 80px;
+}
+.about-area .col-left img {
+  width: 565px;
+}
+.text-abt h2 {
+  font-size: 32px;
+  color: #303030;
+  margin-bottom: 25px;
+}
+.text-abt p {
+  color: #303030;
+  line-height: 2.38em;
+}
+.services {
+  margin-top: 2rem;
+}
+.about-area .services i {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0, 0.15);
+  color: #8e7754;
+  font-size: 20px;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.services p {
+  display: inline-block;
+  font-size: 17px;
+  color: #686868;
+}
+.srv1 p,
+.srv2 p,
+.srv3 p,
+.srv4 p {
+  padding-left: 15px;
+  margin-bottom: 2px;
+}
+.srv1 i,
+.srv2 i,
+.srv3 i,
+.srv4 i {
+  margin-bottom: 20px;
+}
+.clr {
+  clear: both;
+}
+/* location-area */
+.location-area {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: #f8f8f8;
+}
+.location-area .col-left {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.location-area .col-right {
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+.location-area .image-loc img {
+  width: 565px;
+}
+.txt-loc {
+  padding-top: 100px;
+}
+.txt-loc h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.txt-loc p {
+  margin-bottom: 20px;
+  color: #303030;
+  line-height: 2.38em;
+}
+/* baking-area */
+.baking-area {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.baking-area .txt-center {
+  text-align: center;
+}
+.baking-area h2 {
+  font-size: 30px;
+}
+.baking-area p {
+  font-size: 17px;
+  margin: 17px auto 0;
+  color: #888;
+}
+.baking-area .content {
+  text-align: center;
+}
+.baking-area .content .left,
+.middle,
+.right {
+  display: inline-block;
+  width: 378px;
+}
+.baking-area img {
+  width: 378px;
+  padding: 0 15px 0 15px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.baking-area .txt h3 {
+  font-size: 22px;
+}
+.baking-area .txt p {
+  line-height: 2.38em;
+}
+/* Contact-area */
+.contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f8f8f8;
+}
+.contact .col-left {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.contact .col-right {
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+.contact .services i {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0, 0.15);
+  color: #fff;
+  background-color: #8e7754;
+  font-size: 18px;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.contact .text-abt .details {
+  padding-top: 30px;
+}
+/* about-us */
+.about-us {
+  padding-top: 80px;
+  background-color: #403d38;
+  padding-bottom: 80px;
+}
+.about-us h3 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.about-us p,
+span {
+  color: #969696;
+  line-height: 1.86em;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.about-us hr {
+  color: rgba(255, 255, 255, 0.05);
+}
+.about-us .first,
+.seconed,
+.third,
+.fourth {
+  width: 24%;
+  float: left;
+  padding: 0 10px 0 10px;
+}
+.seconed p {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+.third p {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+.fourth p {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  display: inline-block;
+}
+.fourth ul{
+list-style: none;
+}
+.about-us .fourth ul li, i{
+  display: inline-block;
+}
+.fourth ul i{
+  color: #969696;
+}
+/* footer */
+.footer{
+  background-color: #353330;
+  text-align: center;
+  padding-top: 80px;
+}
+.footer img{
+padding-bottom: 30px;
+}
+.footer p{
+  color: #fff;
+}
+
+.footer .icons {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.footer .icons span i {
+  color: white;
+}
+.footer .icons span {
+  margin-left: 2px;
+  display: inline-block;
+  line-height: 2.5;
+  background-color: #484540;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+.footer .icons .google:hover {
+  transition: 0.7s;
+  background-color: #dd4b39;
+}
+.footer .icons .face:hover {
+  transition: 0.7s;
+  background-color: #3b5998;
+}
+.footer .icons .linked:hover {
+  transition: 0.7s;
+  background-color: #007bb5;
+}
+.footer .icons .twitter:hover {
+  transition: 0.7s;
+  background-color: #00aced ;
+}
